@@ -57,4 +57,35 @@ const myfunction = function(){
 
 // myfunction()
 
-console.log(typeof myfunction)
+// console.log(typeof myfunction)
+
+
+
+
+
+
+
+
+
+//                                      Stack And Heap Memory
+// ********************************************************************************************************
+
+// stack memory  :        use in premitive datatype
+// heap memory   :        use in non premitive datatype
+
+let myYoutubeName = "AmitYT"
+let anotherName = myYoutubeName
+anotherName = "amit"
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let user1 = {
+    name: "Amit",
+    email: "abc@gmail.com",
+}
+
+let user2 = user1
+
+user2.email = "amit@gmail.com"
+console.log(user1);
+console.log(user2);
