@@ -53,10 +53,9 @@
 
 //-------------------------------- slice & splice ------------------------------
 
-const myArray = [0,1,2,3,4,5]
-console.log(myArray.slice(1,3));     // slice function is not manipulated in original array
-console.log(myArray);
+// const myArray = [0,1,2,3,4,5]
+// console.log(myArray.slice(1,3));     // slice function is not manipulated in original array
+// console.log(myArray);
 
-console.log(myArray.splice(1,3));     // splice funcction is manipulated in original araay
-console.log(myArray);
-
+// console.log(myArray.splice(1,3));     // splice funcction is manipulated in original araay
+// console.log(myArray);
