@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title">Dom Learning</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div>
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // const title = document.getElementById('title')
+        // title.style.backgroundColor = 'green'
+        // title.style.color = 'white'
+        // title.style.padding = '15px'
+        // title.style.borderRadius = '15px'
+        // title.innerText = 'code'
+        // title.innerHTML = '<h6>doc</h6>'
+
+
+        // -------------------------------------------------------------------
+
+        const title = document.querySelector('#title')
+        title.style.color = 'red'
+
+        //-------------------------------------------------------------------
+        // ------------------- list ----------------------
+
+        const allList = document.querySelectorAll('li')
+        allList[0].style.color = 'red'
+        allList[2].style.color = 'red'
+
+        allList.forEach(function(listOne){
+            listOne.style.backgroundColor = 'cyan'
+        })
+
+    </script>
+</body>
+</html>
