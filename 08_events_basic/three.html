@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>java</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+      //   const sayDate = function (str) {
+      //     console.log(str, Date.now());
+      //   };
+      //   setInterval(sayDate, 1000, "hii");
+
+      // -----------------------------------------------------------------------------
+
+      
+      
+
+      const sayDate1 = function () {
+        console.log("Amit Kumar", Date.now());
+      };
+
+      const start = document.querySelector("#start");
+      const stop = document.querySelector("#stop");
+
+      let intervalId
+      const startPrintName = function(){
+        if(!intervalId){
+          intervalId = setInterval(sayDate1,1000)
+        }
+      }
+
+      const stopPrintName = function(){
+        clearInterval(intervalId)
+        intervalId = null;
+      }
+
+      start.addEventListener("click", startPrintName);
+      stop.addEventListener("click", stopPrintName);
+
+      // ------------------------------------------------------
+    </script>
+  </body>
+</html>
